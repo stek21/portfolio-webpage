@@ -1,4 +1,40 @@
-.App {
- 
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+:root {
+    --primary-white: #fff;
+    --primary-blue: #69e6ff;
 }
 
+body {
+    font-family: "Roboto Condensed" sans-serif;
+}
+/******************************NAVBAR****************************************/
+
+.logo {
+    width: 3.25rem;
+    margin-left: 1rem;
+}
+
+nav a.nav-link {
+    font-size: .8rem;
+    letter-spacing: 0.0375rem;
+    cursor: pointer;
+}
+
+nav ul li {
+    text-transform: uppercase;
+}
+
+.navbar-nav > li > a {
+    margin-right: 0.75rem;
+    margin-left: 0.75rem;
+    color: var(--primary-white) !important;
+}
+
+.navbar-nav > li >a.active, .navbar-nav > li > a.active:focus {
+    border-bottom: 0.1875rem solid var(--primary-blue);
+}
+
+.navbar-nav > li > a:hover {
+    border-bottom: 0.1875rem solid var(--primary-blue);
+}
